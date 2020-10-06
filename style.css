@@ -7,7 +7,16 @@ body{
 #product{
     align-self: baseline;
     width:100%;
-    
+    z-index: 1;
+}
+.content-grid div{
+    z-index: 1;
+}
+.header-grid div{
+    z-index: 1;
+}
+.header-text {
+    background-color: white;
 }
 .reward-flex{
     display: flex;
@@ -144,7 +153,25 @@ margin-top: 6vh;
 #hyper{
     z-index: -1;
     position: absolute;
-}
+}#light{
+    display: none;
+    animation: rotate 20s linear infinite; 
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    width: 80%;
+    
+    }
+    @keyframes rotate {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    #nolight{
+        display: none;
+    }
+    
 .content-grid{
     display: grid;
 grid-template-columns: 1fr;
@@ -313,10 +340,30 @@ margin-top: 6vh;
 .lightspeed{
     max-width: 100%;
     display:flex;
-
+}
+#product{
+    align-self: baseline;
+    width:100%;
+    z-index: 1;
 }
 .lightspeed img{
     max-width: 99%;
+}
+#light{
+display: none;
+animation: rotate 20s linear infinite; 
+height: 100%;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+#nolight{
+    display: none;
 }
 #hyper{
     z-index: -1;
